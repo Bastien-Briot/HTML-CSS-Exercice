@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    font-family: Arial, "sans-serif";
+    color: #fff;
+}
+
+h1 {
+    text-align : center;
+}
+
+.background {
+    padding: 100px;
+    background: linear-gradient(90deg, #cc6611, #08418c);
+}
