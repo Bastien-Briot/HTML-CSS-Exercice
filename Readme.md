@@ -1,12 +1,8 @@
-<h1 align="center">HTML-CSS Exercice</h1>
-<br />
+<h1 align="center">Exercice 1</h1>
 <p align="center">
-    <a href="https://github.com/discordjs/discord.js/">
-      <img src="https://img.shields.io/badge/HTML-5-orange?style=for-the-badge" alt="html 5">
-      <img src="https://img.shields.io/badge/CSS-3-blue?style=for-the-badge" alt="html 5">
-    </a>
+    <img src="https://img.shields.io/badge/HTML-5-orange?style=for-the-badge&logo=html5&logoColor=db5321&color=db5321" alt="html 5">
+    <img src="https://img.shields.io/badge/CSS-3-blue?style=for-the-badge&logo=css3&logoColor=218adb&color=218adb" alt="html 5">
 </p>
-<br />
+<br/>
 
-> [!NOTE]
-> !
+<h2>Instruction</h2>
