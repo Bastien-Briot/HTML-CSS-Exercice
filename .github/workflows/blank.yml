@@ -1,0 +1,37 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  push:
+    branches: [ "ex1" ]
+  pull_request:
+    branches: [ "solution_ex1" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v2
+
+      - name: Vérification de la création du titre principal
+        run: |
+          if ! grep -q '<h1>hello world<\/h1>' index.html; then
+            echo "Erreur : Aucune balise <h1>hello world</h1> n'a été trouvée dans index.html"
+            exit 1
+          fi
+
+      - name: Vérification de la création de l'image
+        run: |
+          if ! grep -q '<img src="./images/hello-world.png">' index.html; then
+            echo "Erreur : Aucune balise <img> avec l'attribut src='./images/hello-world.png' n'a été trouvée dans index.html"
+            exit 1
+          fi
