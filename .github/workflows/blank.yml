@@ -27,11 +27,9 @@ jobs:
           if ! grep -q '<h1>hello world<\/h1>' index.html; then
             echo "Erreur : Aucune balise <h1>hello world</h1> n'a été trouvée dans index.html"
             exit 1
-          fi
 
       - name: Vérification de la création de l'image
         run: |
           if ! grep -q '<img src="./images/hello-world.png">' index.html; then
             echo "Erreur : Aucune balise <img> avec l'attribut src='./images/hello-world.png' n'a été trouvée dans index.html"
             exit 1
-          fi
